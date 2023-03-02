@@ -1,0 +1,219 @@
+.body {
+    background: linear-gradient( rgb(0, 92, 191), #7b3f5f);
+    background-repeat: no-repeat;
+  }
+
+
+  .contenedor{
+    position: relative;
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo button{
+    border: none;
+    position: relative;
+    width: 200px;
+    height: 76px;
+    padding: 0;
+    z-index: 2;
+    -webkit-mask: url("https://png.pngtree.com/png-clipart/20220125/ourmid/pngtree-brush-brush-art-strokes-png-image_4365600.png") no-repeat 50% 50%;
+    mask: url("https://png.pngtree.com/png-clipart/20220125/ourmid/pngtree-brush-brush-art-strokes-png-image_4365600.png") no-repeat 50% 50%; 
+    -webkit-mask-size: 100%; /*Warning por uso de etiqueta de dudosa adaptibilidad*/
+    cursor: pointer;
+    background-color: transparent;
+    transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -o-transform: translateY(8px);
+}
+
+.logo button::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0 0 0 white;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+.logo button:hover{
+    box-shadow: 0px -13px 56px 12px #ffffffa6;
+}
+
+.logo button span{
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 100;
+    left: 50%;
+    top: 50%;
+    letter-spacing: 3px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+.logo button:hover span{
+    color:yellow;    
+}
+
+.logo button::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: rgb(125, 0, 142); /*Linea del Color de la animacion*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.logo button:hover::before{
+    width: 100%;
+}
+
+
+#portada{
+    transition: 2s ease-out 100ms;
+    -webkit-transition: 2s ease-out 100ms;
+    -moz-transition: 2s ease-out 100ms;
+    -ms-transition: 2s ease-out 100ms;
+    -o-transition: 2s ease-out 100ms;
+}
+
+#portada:hover{
+        border-radius:50%;
+        -webkit-border-radius:50%;
+        box-shadow: 0px 0px 15px 15px #570083;
+        -webkit-box-shadow: 0px 0px 15px 15px #570083;
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transition: all 2s;
+        -webkit-transition: all 2s;
+        -moz-transition: all 2s;
+        -ms-transition: all 2s;
+        -o-transition: all 2s;
+}
+
+.part2{
+    background:linear-gradient(#7b3f5f,#40c057);
+    background-repeat: no-repeat;
+}
+
+.spinner {
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    cursor: not-allowed;
+    border-radius: 50%;
+    border: 2px solid #444;
+    box-shadow: -10px -10px 10px #6359f8, 0px -10px 10px 0px #9c32e2, 10px -10px 10px #f36896, 10px 0 10px #ff0b0b, 10px 10px 10px 0px#ff5500, 0 10px 10px 0px #ff9500, -10px 10px 10px 0px #ffb700;
+    animation: rot55 0.7s linear infinite;
+  }
+  
+  .spinnerin {
+    border: 2px solid #444;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @keyframes rot55 {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .boton {
+    position: relative;
+    height: 50px;
+    padding: 0 30px;
+    border: 2px solid #000;
+    background: #e8e8e8;
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+   }
+   
+   .boton:before, .boton:after {
+    content: "";
+    position: absolute;
+    background: #e8e8e8;
+    transition: all .2s linear;
+   }
+   
+   .boton:before {
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px;
+   }
+   
+   .boton:after {
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px;
+   }
+   
+   .boton:hover {
+    cursor: crosshair;
+   }
+   
+   .boton:active {
+    transform: scale(0.95);
+   }
+   
+   .boton:hover:before {
+    height: calc(100% - 32px);
+    top: 16px;
+   }
+   
+   .boton:hover:after {
+    width: calc(100% - 32px);
+    left: 16px;
+   }
+   
+   .boton span {
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+    font-weight: 600;
+   }

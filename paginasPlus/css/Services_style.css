@@ -1,0 +1,166 @@
+.body {
+    background: linear-gradient( rgb(0, 92, 191), #7b3f5f);
+    background-repeat: no-repeat;
+  }
+#servicios{
+    background:linear-gradient(#7b3f5f,#40c057);
+    background-repeat: no-repeat;
+}
+
+.contenedor{
+    position: relative;
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo button{
+    border: none;
+    position: relative;
+    width: 200px;
+    height: 76px;
+    padding: 0;
+    z-index: 2;
+    -webkit-mask: url("pngegg.png") no-repeat 50% 50%;
+    mask: url("pngegg.png") no-repeat 50% 50%; 
+    -webkit-mask-size: 100%; /*Warning por uso de etiqueta de dudosa adaptibilidad*/
+    cursor: pointer;
+    background-color: transparent;
+    transform: translateY(8px);
+    -webkit-transform: translateY(8px);
+    -moz-transform: translateY(8px);
+    -ms-transform: translateY(8px);
+    -o-transform: translateY(8px);
+}
+
+.logo button::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 0 0 0 white;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+.logo button:hover{
+    box-shadow: 0px -13px 56px 12px #ffffffa6;
+}
+
+.logo button span{
+    position: absolute;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 100;
+    left: 50%;
+    top: 50%;
+    letter-spacing: 3px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    color: white;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+.logo button:hover span{
+    color:yellow;    
+}
+
+.logo button::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: rgb(125, 0, 142); /*Linea del Color de la animacion*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.logo button:hover::before{
+    width: 100%;
+}
+
+
+
+.cssbuttons-io {
+    position: relative;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
+   }
+   
+   .cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+   }
+   
+   .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8em 1.2em 0.8em 1.05em;
+   }
+   
+   .cssbuttons-io::before,
+   .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+   }
+   
+   .cssbuttons-io::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+   }
+   
+   .cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
+   }
+   
+   .cssbuttons-io:active {
+    transform: scale(0.95);
+   }
+   
